@@ -5,9 +5,17 @@
 :root{
 --primary-black: #030303;
 --primary-white: #fdfdfd;
+--header-height: 5rem;
 }
 
 html {
   background-color: var(--primary-black);
   color: var(--primary-white);
+}
+
+
+@layer components{
+  .list-item--link{
+    @apply hover:underline underline-offset-8
+  }
 }

@@ -3,16 +3,20 @@ import MobileNavbar from "./MobileNavbar";
 const Navbar = () => {
   return (
     <>
-      <div className="hidden md:flex lg:flex">
-        <ul>
-          <li>
-            <a>LinkedIn</a>
+      <nav className="hidden md:block lg:block">
+        <ul className="flex items-center justify-evenly w-fit gap-10 font-normal text-lg">
+          <li className="list-item--link">
+            <a href="https://www.linkedin.com/in/antra-verma/" target="_blank">
+              LinkedIn
+            </a>
           </li>
-          <li>
-            <a>About Me</a>
+          <li className="list-item--link">
+            <a href="/about" target="_blank">
+              About Me
+            </a>
           </li>
         </ul>
-      </div>
+      </nav>
       <MobileNavbar />
     </>
   );
