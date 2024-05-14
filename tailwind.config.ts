@@ -17,6 +17,9 @@ const config: Config = {
         "primary-white": "#fdfdfd",
         "primary-black": "#030303",
       },
+      fontFamily: {
+        barlow: ['"Barlow Semi Condensed"'],
+      },
     },
   },
   plugins: [],

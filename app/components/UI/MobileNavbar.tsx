@@ -17,9 +17,13 @@ const MobileNavbar = () => {
   return (
     <div className="block md:hidden lg:hidden">
       {isOpen ? (
-        <FaXmark size="20px" onClick={onClose} />
+        <FaXmark size="20px" className="cursor-pointer" onClick={onClose} />
       ) : (
-        <FaBarsStaggered size="20px" onClick={onOpen} />
+        <FaBarsStaggered
+          size="20px"
+          className="cursor-pointer"
+          onClick={onOpen}
+        />
       )}
       {isOpen && (
         <nav className="absolute top-20 left-0 h-full w-full">

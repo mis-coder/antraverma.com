@@ -14,6 +14,14 @@ html {
 }
 
 
+
+@layer base{
+  @font-face {
+    font-family: 'Barlow Semi Condensed';
+    src: url('./assets/fonts/BarlowSemiCondensed-Black.ttf');
+  }
+}
+
 @layer components{
   .list-item--link{
     @apply hover:underline underline-offset-8
