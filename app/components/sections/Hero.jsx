@@ -8,12 +8,12 @@ const HeroSection = () => {
             Hey there!
           </h1>
           <p className="mt-6 block md:hidden text-sm md:text-lg">
-            I am a software developer who likes building web applications for you.
+            I am a software developer who likes building Web Applications for you.
           </p>
         </div>
         <div>
           <p className="hidden md:block text-sm md:text-lg">
-            I am a software developer who likes building web applications for you.
+            I am a software developer who likes building Web Applications for you.
           </p>
           <p className="mt-4 text-sm md:text-md">
             “Thank you for visiting! While there isn’t much to explore at the moment, I invite you to return in the near future. I have exciting things in store for you. Looking forward to having you back on my website!” 😊
