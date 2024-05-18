@@ -5,7 +5,7 @@ const Header = () => {
     <header className="flex h-20 w-full items-center justify-between px-8 md:px-16 lg:px-16">
       <a
         href="/"
-        className="font-extrabold text-sm md:text-lg lg:text-lg tracking-wide"
+        className="font-extrabold text-sm md:text-md lg:text-md tracking-wide"
       >
         Antra Verma
       </a>
