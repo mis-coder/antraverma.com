@@ -18,10 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={`${poppins.className}  px-8 md:px-16`}>
         <Header />
         <main className="flex min-h-screen flex-col items-center justify-between">
-        {children}
+          {children}
         </main>
         <Footer />
       </body>
