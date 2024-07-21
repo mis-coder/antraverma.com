@@ -1,3 +1,4 @@
+import MobileNavbar from "./UI/MobileNavbar";
 import Navbar from "./UI/Navbar";
 
 const Header = () => {
@@ -10,6 +11,7 @@ const Header = () => {
         Antra Verma
       </a>
       <Navbar />
+      <MobileNavbar />
     </header>
   );
 };

@@ -1,5 +1,7 @@
 "use client";
 
+import { navItems } from "@/app/constants/static-data";
+import { nanoid } from "nanoid";
 import { useState } from "react";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 
@@ -16,33 +18,34 @@ const MobileNavbar = () => {
 
   return (
     <div className="block md:hidden lg:hidden">
-      {isOpen ? (
-        <FaXmark size="20px" className="cursor-pointer" onClick={onClose} />
-      ) : (
-        <FaBarsStaggered
-          size="20px"
-          className="cursor-pointer"
-          onClick={onOpen}
-        />
-      )}
+      <FaBarsStaggered
+        size="20px"
+        className="animate-grow cursor-pointer"
+        onClick={onOpen}
+      />
+
       {isOpen && (
-        <nav className="absolute top-20 left-0 h-full w-full">
-          <ul className="pl-8 h-1/2 flex flex-col gap-5 items-start text-sm">
-            <li className="underline underline-offset-8">
-              <a
-                href="https://www.linkedin.com/in/antra-verma/"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li className="underline underline-offset-8">
-              <a href="/about" target="_blank">
-                About Me
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div className="fixed z-2 top-0 left-0 bg-primary-black h-full w-full flex items-center justify-center">
+          <FaXmark
+            size="30px"
+            className="animate-wiggle cursor-pointer absolute top-10 right-10"
+            onClick={onClose}
+          />
+          <nav>
+            <ul>
+              {navItems.map((item, index) => (
+                <li
+                  className={`animate-underline-${index} text-primary-white py-5`}
+                  key={nanoid()}
+                >
+                  <a className="text-lg" href={item.url} target={item.target}>
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       )}
     </div>
   );

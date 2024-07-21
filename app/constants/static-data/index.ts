@@ -1,6 +1,11 @@
 export const navItems = [
   {
     target: "",
+    title: "Home",
+    url: "/",
+  },
+  {
+    target: "",
     title: "About Me",
     url: "/about",
   },

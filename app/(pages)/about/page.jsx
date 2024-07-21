@@ -9,10 +9,10 @@ const AboutPage = () => {
         <div className="w-full md:w-1/2">
           <h2 className="font-barlow text-4xl md:text-5xl">Hey it's Antra!</h2>
           <p className="mt-4 text-sm md:text-md">
-            I am a 25-year-old Software Developer based in Mohali, India,
-            currently working with Authenticate® as a Full Stack Developer. With
-            a robust network of over 6.5K connections on LinkedIn, I am
-            passionate about problem-solving and simplifying complex challenges.
+            I am a Software Developer based in Mohali, India, currently working
+            with Authenticate® as a Full Stack Developer. With a robust network
+            of over 6.5K connections on LinkedIn, I am passionate about
+            problem-solving and simplifying complex challenges.
             <br />
             <br /> I value kindness, empathy, and the pursuit of making the
             world a better place. I love my family and strive to integrate these

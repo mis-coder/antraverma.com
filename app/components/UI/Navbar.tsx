@@ -3,8 +3,7 @@ import { nanoid } from "nanoid";
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="block">
+      <nav className="hidden md:block">
         <ul className="flex items-center justify-evenly w-fit gap-10 font-normal">
           {navItems.map((item) => (
             <li key={nanoid()} className="list-item--link">
@@ -19,7 +18,6 @@ const Navbar = () => {
           ))}
         </ul>
       </nav>
-    </>
   );
 };
 
