@@ -7,7 +7,9 @@ const AboutPage = () => {
     <section className="pt-5 pb-20 md:pt-20 md:pb-0">
       <div className="flex flex-col-reverse md:flex-row w-full h-full gap-10 md:gap-20 items-center justify-center">
         <div className="w-full md:w-1/2">
-          <h2 className="font-barlow text-4xl md:text-5xl">Hey it's Antra!</h2>
+          <h2 className="font-barlow text-4xl md:text-5xl">
+            Hey it&apos;s Antra!
+          </h2>
           <p className="mt-4 text-sm md:text-md">
             I am a Software Developer based in Mohali, India, currently working
             with Authenticate® as a Full Stack Developer. With a robust network
