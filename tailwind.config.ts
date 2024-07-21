@@ -6,6 +6,11 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    {
+      pattern: /animate-underline-\d/,
+    },
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -19,6 +24,22 @@ const config: Config = {
       },
       fontFamily: {
         barlow: ['"Barlow Semi Condensed"'],
+      },
+      animation: {
+        grow: "grow 1s ease-out 2",
+        ...Array.from({ length: 4 }, (_, i) => ({
+          [`underline-${i}`]: `underline 0.5s linear ${0.5 * i}s forwards`,
+        })).reduce((a, c) => ({ ...a, ...c }), {}),
+      },
+      keyframes: {
+        underline: {
+          "0%": { textDecoration: "none" },
+          "100%": { textDecoration: "underline", textUnderlineOffset: "10px" },
+        },
+        grow: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.2)" },
+        },
       },
     },
   },
