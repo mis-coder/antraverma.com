@@ -5,11 +5,6 @@ export const navItems = [
     url: "/",
   },
   {
-    target: "",
-    title: "About Me",
-    url: "/about",
-  },
-  {
     target: "_blank",
     title: "Newsletter",
     url: "https://antraverma.substack.com/",

@@ -1,5 +1,6 @@
 import MobileNavbar from "./UI/MobileNavbar";
 import Navbar from "./UI/Navbar";
+import ToggleTheme from "./UI/ToggleTheme";
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
       </a>
       <Navbar />
       <MobileNavbar />
+      <ToggleTheme turnDarkOn={true} />
     </header>
   );
 };
