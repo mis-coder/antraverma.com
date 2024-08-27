@@ -11,6 +11,7 @@ const config: Config = {
       pattern: /animate-underline-\d/,
     },
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
