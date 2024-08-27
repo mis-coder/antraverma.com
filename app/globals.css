@@ -8,13 +8,6 @@
 --header-height: 5rem;
 }
 
-html {
-  background-color: var(--primary-black);
-  color: var(--primary-white);
-}
-
-
-
 @layer base{
   @font-face {
     font-family: 'Barlow Semi Condensed';

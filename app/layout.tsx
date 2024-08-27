@@ -19,15 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} bg-primary-white text-primary-black dark:bg-primary-black dark:text-primary-white`}
+        className={`${poppins.className} bg-primary-white text-primary-black dark:bg-primary-black dark:text-primary-white max-w-screen-xl mx-auto px-6 md:px-20`}
       >
-        <div className=" max-w-screen-xl mx-auto px-6 md:px-20">
-          <Header />
-          <main className="flex min-h-screen flex-col items-center justify-between">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <Header />
+        <main className="flex min-h-screen flex-col items-center justify-between">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

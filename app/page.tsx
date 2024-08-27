@@ -14,7 +14,7 @@ export default function HomePage() {
           <p className="mt-4 text-sm md:text-md">
             I am a Software Developer based in Mohali, India, currently working
             with Authenticate® as a Full Stack Developer. With a robust network
-            of over 6.5K connections on LinkedIn, I am passionate about
+            of over 6.7K connections on LinkedIn, I am passionate about
             problem-solving and simplifying complex challenges.
             <br />
             <br /> I value kindness, empathy, and the pursuit of making the

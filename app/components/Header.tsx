@@ -11,9 +11,11 @@ const Header = () => {
       >
         Antra Verma
       </a>
-      <Navbar />
-      <MobileNavbar />
-      <ToggleTheme turnDarkOn={true} />
+      <div className="flex items-center gap-4">
+        <Navbar />
+        <MobileNavbar />
+        <ToggleTheme />
+      </div>
     </header>
   );
 };
