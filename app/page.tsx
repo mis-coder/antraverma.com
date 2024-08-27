@@ -26,7 +26,7 @@ export default function HomePage() {
             className="link-btn"
           >
             <TbMessageChatbot size={28} />
-            Let's get in touch
+            Let&apos;s get in touch
           </a>
         </div>
         <Image
