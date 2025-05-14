@@ -1,10 +1,5 @@
 export const navItems = [
   {
-    target: "",
-    title: "Home",
-    url: "/",
-  },
-  {
     target: "_blank",
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/antra-verma/",

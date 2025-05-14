@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import { playfair, workSans } from "./fonts";
 import "./globals.css";
-
-const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Antra Verma",
-  description: "This is Personal Website of Antra Verma.",
+  description: "Personal Website of Antra Verma.",
 };
 
 export default function RootLayout({
@@ -17,9 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${playfair.variable} ${workSans.variable}`}>
       <body
-        className={`${poppins.className} bg-primary-white text-primary-black dark:bg-primary-black dark:text-primary-white max-w-screen-xl mx-auto px-6 md:px-20`}
+        className={
+          "max-w-screen-xl mx-auto px-6 md:px-20 bg-secondary text-primary"
+        }
       >
         <Header />
         <main className="flex min-h-screen flex-col items-center justify-between">

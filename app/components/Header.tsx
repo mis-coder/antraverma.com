@@ -1,6 +1,5 @@
 import MobileNavbar from "./UI/MobileNavbar";
 import Navbar from "./UI/Navbar";
-import ToggleTheme from "./UI/ToggleTheme";
 
 const Header = () => {
   return (
@@ -14,7 +13,6 @@ const Header = () => {
       <div className="flex items-center gap-4">
         <Navbar />
         <MobileNavbar />
-        <ToggleTheme />
       </div>
     </header>
   );
