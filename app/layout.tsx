@@ -16,15 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${workSans.variable}`}>
-      <body
-        className={
-          "max-w-screen-xl mx-auto px-6 md:px-20 bg-secondary text-primary"
-        }
-      >
+      <body className={"font-workSans w-full"}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between">
-          {children}
-        </main>
+        <main className="pt-[84px] text-primary">{children}</main>
         <Footer />
       </body>
     </html>

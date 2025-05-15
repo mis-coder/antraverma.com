@@ -5,15 +5,12 @@
 :root {
   /* fonts */
   --font-playway: "Playfair_Display", sans-serif;
-  --font-nunito: "Nunito", sans-serif;
   --font-work-sans: "Work_Sans", sans-serif;
-  --font-inter: "Inter", sans-serif;
-  --font-nunito-sans: "Nunito_Sans", sans-serif;
 
   /* colors */
   --color-primary: #ffffff;
   --color-secondary: #07030e;
-  --color-tertiary: #93d802;
+  --color-tertiary: #7bb303;
 
   --header-height: 5rem;
 }
