@@ -1,5 +1,5 @@
-import MobileNavbar from "./UI/MobileNavbar";
-import Navbar from "./UI/Navbar";
+import MobileNavbar from "./MobileNavbar";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-6">
           <a
             href="/"
-            className="font-playfair font-normal text-md md:text-lg tracking-wider"
+            className="font-playfair font-normal text-md md:text-xl tracking-wider"
           >
             Antra Verma
           </a>

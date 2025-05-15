@@ -4,6 +4,7 @@ import { navItems } from "@/app/constants";
 import { nanoid } from "nanoid";
 import { useState } from "react";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
+import { Button } from "./Button";
 
 const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,9 +39,7 @@ const MobileNavbar = () => {
               ))}
             </ul>
           </nav>
-          <button className="bg-tertiary text-primary py-2 px-6 rounded-md w-1/2">
-            Let's talk
-          </button>
+          <Button variant="primary">Let's Talk</Button>
         </div>
       )}
     </div>

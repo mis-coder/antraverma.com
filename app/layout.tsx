@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import { playfair, workSans } from "./fonts";
+
+import Footer from "./components/UI/Footer";
+import Header from "./components/UI/Header";
+import { playfair, quickSand } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,10 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${workSans.variable}`}>
-      <body className={"font-workSans w-full"}>
+    <html lang="en" className={`${playfair.variable} ${quickSand.variable}`}>
+      <body className="font-quickSand w-full">
         <Header />
-        <main className="pt-[84px] text-primary">{children}</main>
+        <main className="text-primary pt-[var(--header-height)]">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -1,4 +1,4 @@
-import { Playfair_Display, Work_Sans } from "next/font/google";
+import { Playfair_Display, Quicksand } from "next/font/google";
 
 export const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -6,10 +6,10 @@ export const playfair = Playfair_Display({
   variable: "--font-playfair",
 });
 
-export const workSans = Work_Sans({
+export const quickSand = Quicksand({
   subsets: ["latin"],
-  variable: "--font-work-sans",
+  variable: "--font-quick-sand",
   display: "swap",
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal"],
 });

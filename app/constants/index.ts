@@ -1,4 +1,7 @@
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { SocialLink } from "../lib/types";
+
+import { DiGithubAlt } from "react-icons/di";
+import { LiaLinkedin } from "react-icons/lia";
 
 export const navItems = [
   {
@@ -13,17 +16,17 @@ export const navItems = [
   },
 ];
 
-export const socialLinks = [
+export const socialLinks: SocialLink[] = [
   {
     target: "_blank",
-    title: "Github",
-    url: "https://github.com/mis-coder",
-    icon: FaGithubSquare,
+    label: "Github",
+    href: "https://github.com/mis-coder",
+    icon: DiGithubAlt,
   },
   {
     target: "_blank",
-    title: "LinkedIn",
-    url: "https://www.linkedin.com/in/antra-verma/",
-    icon: FaLinkedin,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/antra-verma/",
+    icon: LiaLinkedin,
   },
 ];

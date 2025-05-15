@@ -4,13 +4,20 @@
 
 :root {
   /* fonts */
-  --font-playway: "Playfair_Display", sans-serif;
-  --font-work-sans: "Work_Sans", sans-serif;
+  --font-playway: "Playfair_Display";
+  --font-quick-sand: "Quicksand";
 
   /* colors */
   --color-primary: #ffffff;
   --color-secondary: #07030e;
   --color-tertiary: #7bb303;
 
-  --header-height: 5rem;
+  --header-height: 4rem;
+
+  /* transitions */
+  --transition: opacity 0.4s ease-in-out;
+}
+
+* {
+  transition: var(--transition);
 }

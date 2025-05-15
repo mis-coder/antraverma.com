@@ -1,9 +1,10 @@
 import { navItems } from "@/app/constants";
 import { nanoid } from "nanoid";
+import { Button } from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="hidden md:flex gap-6 font-normal text-sm items-center">
+    <nav className="hidden md:flex gap-6 font-normal text-md items-center">
       <ul className="flex items-center justify-evenly w-fit gap-8">
         {navItems.map((item) => (
           <li key={nanoid()}>
@@ -18,9 +19,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="h-6 w-[1px] bg-primary" />
-      <button className="bg-tertiary text-primary py-2 px-6 rounded-md">
-        Let's talk
-      </button>
+      <Button variant="primary">Let's Talk</Button>
     </nav>
   );
 };

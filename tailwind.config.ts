@@ -6,12 +6,6 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  safelist: [
-    {
-      pattern: /animate-underline-\d/,
-    },
-  ],
-  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -20,8 +14,8 @@ const config: Config = {
         tertiary: "var(--color-tertiary)",
       },
       fontFamily: {
-        playfair: ["var(--font-playfair)"],
-        workSans: ["var(--font-work-sans)"],
+        playfair: ["var(--font-playfair)", "sans-serif"],
+        quickSand: ["var(--font-quick-sand)", "sans-serif"],
       },
     },
   },
