@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${quickSand.variable}`}>
-      <body className="font-quickSand w-full">
+      <body className="font-quick-sand w-full">
         <Header />
-        <main className="text-primary pt-[var(--header-height)]">
+        <main className="text-secondary pt-[var(--header-height)]">
           {children}
         </main>
         <Footer />
