@@ -5,8 +5,8 @@ import { TbExternalLink } from "react-icons/tb";
 
 const TopLinkedInPosts = () => {
   return (
-    <section className="w-full px-4 py-16 bg-secondary">
-      <div className="container-wrapper text-primary">
+    <section className="w-full px-4 py-16 bg-secondary md:bg-primary">
+      <div className="container-wrapper text-primary md:bg-secondary py-10 md:py-20">
         <h2 className="section-title-sm">Top LinkedIn Posts</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {posts.map((post) => (
