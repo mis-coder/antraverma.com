@@ -4,9 +4,9 @@ import Image from "next/image";
 const ServicesSection = () => {
   return (
     <section className="w-full px-4 py-16 md:py-24" id="services">
-      <div className="w-full max-w-screen-xl mx-auto px-6 md:px-20">
+      <div className="container-wrapper">
         <div>
-          <h2 className="text-center text-4xl md:text-6xl font-playfair text-tertiary font-bold underline underline-offset-8 decoration-4 decoration-tertiary mb-10">
+          <h2 className="section-title">
             My Services
           </h2>
           <p className="text-lg italic max-w-screen-md text-center mx-auto mb-10">
@@ -28,9 +28,7 @@ const ServicesSection = () => {
                   className="h-full w-full object-contain text-tertiary"
                 />
               </div>
-              <h3 className="text-2xl font-semibold mb-1">
-                {service.title}
-              </h3>
+              <h3 className="text-2xl font-semibold mb-1">{service.title}</h3>
               <p className="mb-3 text-base leading-relaxed text-pretty">
                 {service.description}
               </p>

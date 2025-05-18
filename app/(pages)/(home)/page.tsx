@@ -1,8 +1,8 @@
 "use client";
 
-import BookCallSection from "./components/Sections/BookCall";
-import HeroSection from "./components/Sections/Hero";
-import ServicesSection from "./components/Sections/Services";
+import BookCallSection from "@/app/components/Sections/BookCall";
+import HeroSection from "@/app/components/Sections/Hero";
+import ServicesSection from "@/app/components/Sections/Services";
 
 export default function HomePage() {
   return (

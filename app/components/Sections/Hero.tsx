@@ -10,7 +10,7 @@ import { SocialLinks } from "../UI/SocialLinks";
 export default function HeroSection() {
   return (
     <section className="w-full py-14 md:py-24 bg-secondary text-white flex items-center justify-center">
-      <div className="w-full max-w-screen-xl flex items-center justify-center md:justify-normal flex-wrap-reverse gap-8 md:gap-2 sm:flex-wrap px-6 md:px-20">
+      <div className="container-wrapper flex items-center justify-center md:justify-normal flex-wrap-reverse gap-8 md:gap-2 sm:flex-wrap ">
         <div className="flex-1 space-y-6">
           <h1 className="font-playfair text-4xl text-center md:text-left md:text-5xl lg:text-6xl font-bold">
             Hey it's <span className="text-tertiary">Antra</span>!
