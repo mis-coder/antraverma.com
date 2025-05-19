@@ -1,5 +1,6 @@
-import { navItems } from "@/app/constants";
+import { navItems, onlineMeetUrl } from "@/app/constants";
 import { nanoid } from "nanoid";
+import Link from "next/link";
 import { Button } from "./Button";
 
 const Navbar = () => {
@@ -19,7 +20,11 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="h-6 w-[1px] bg-primary" />
-      <Button variant="primary">Let's Talk</Button>
+      <Button variant="primary">
+        <Link href={onlineMeetUrl} target="_blank">
+          Let's Talk
+        </Link>
+      </Button>
     </nav>
   );
 };

@@ -1,7 +1,8 @@
 "use client";
 
-import { navItems } from "@/app/constants";
+import { navItems, onlineMeetUrl } from "@/app/constants";
 import { nanoid } from "nanoid";
+import Link from "next/link";
 import { useState } from "react";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import { Button } from "./Button";
@@ -39,7 +40,11 @@ const MobileNavbar = () => {
               ))}
             </ul>
           </nav>
-          <Button variant="primary">Let's Talk</Button>
+          <Button variant="primary">
+            <Link href={onlineMeetUrl} target="_blank">
+              Let's Talk
+            </Link>
+          </Button>
         </div>
       )}
     </div>

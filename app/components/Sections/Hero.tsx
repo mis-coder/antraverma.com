@@ -48,7 +48,7 @@ const HeroSection = () => {
               <Link href="/portfolio">View Portfolio</Link>
             </Button>
             <Button variant="primary" className="flex-1 md:flex-initial">
-              <Link href="/contact">Work With Me</Link>
+              <Link href="#services">Work With Me</Link>
             </Button>
           </div>
         </div>

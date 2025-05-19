@@ -1,8 +1,10 @@
+import { onlineMeetUrl } from "@/app/constants";
+import Link from "next/link";
 import { Button } from "../UI/Button";
 
 interface BookCallSectionProps {
   text: string;
-  subText: string
+  subText: string;
 }
 
 const BookCallSection: React.FC<BookCallSectionProps> = ({ text, subText }) => {
@@ -15,7 +17,9 @@ const BookCallSection: React.FC<BookCallSectionProps> = ({ text, subText }) => {
           variant="primary"
           className="w-full md:w-auto px-12 py-4 text-lg"
         >
-          Book a call with me
+          <Link href={onlineMeetUrl} target="_blank">
+            Book a call with me
+          </Link>
         </Button>
       </div>
     </section>
