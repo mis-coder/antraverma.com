@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="h-6 w-[1px] bg-primary" />
       <Button variant="primary">
         <Link href={onlineMeetUrl} target="_blank">
-          Let's Talk
+          Let&apos;s Talk
         </Link>
       </Button>
     </nav>

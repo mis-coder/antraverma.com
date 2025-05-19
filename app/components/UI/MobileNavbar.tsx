@@ -42,7 +42,7 @@ const MobileNavbar = () => {
           </nav>
           <Button variant="primary">
             <Link href={onlineMeetUrl} target="_blank">
-              Let's Talk
+              Let&apos;s Talk
             </Link>
           </Button>
         </div>

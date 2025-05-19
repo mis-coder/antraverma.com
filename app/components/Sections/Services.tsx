@@ -6,11 +6,9 @@ const ServicesSection = () => {
     <section className="w-full px-4 py-16 md:py-24" id="services">
       <div className="container-wrapper">
         <div>
-          <h2 className="section-title">
-            My Services
-          </h2>
+          <h2 className="section-title">My Services</h2>
           <p className="text-lg italic max-w-screen-md text-center mx-auto mb-10">
-            Whether you're starting from scratch or scaling your current
+            Whether you&apos;re starting from scratch or scaling your current
             product, I offer solutions that are built to ship—fast, stable, and
             tailored to your needs!
           </p>
