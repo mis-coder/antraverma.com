@@ -7,7 +7,7 @@ import ProfileImg from "@/app/assets/images/antra_home.jpeg";
 import { Button } from "../UI/Button";
 import { SocialLinks } from "../UI/SocialLinks";
 
-export default function HeroSection() {
+const HeroSection = () => {
   return (
     <section className="w-full py-14 md:py-24 bg-secondary text-white flex items-center justify-center">
       <div className="container-wrapper flex items-center justify-center md:justify-normal flex-wrap-reverse gap-8 md:gap-2 sm:flex-wrap ">
@@ -68,4 +68,6 @@ export default function HeroSection() {
       </div>
     </section>
   );
-}
+};
+
+export default HeroSection;
