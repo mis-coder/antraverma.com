@@ -9,7 +9,10 @@ export default function HomePage() {
     <div className="min-h-screen w-full">
       <HeroSection />
       <ServicesSection />
-      <BookCallSection />
+      <BookCallSection
+        text="Not sure what fits you best?"
+        subText="Let's discuss your project needs on a call!"
+      />
     </div>
   );
 }

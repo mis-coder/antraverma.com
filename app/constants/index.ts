@@ -182,7 +182,7 @@ export const careerData = [
     title: "Current status",
     duration: "2025",
     description:
-      "I parted ways with Authenticate on April 30, 2025, due to a misalignment of goals and financial constraints at the startup. Since then, I’ve been actively upskilling in AI, exploring new opportunities in the field, freelancing, and building my own projects.",
+      "I parted ways with Authenticate on April 30, 2025, due to financial crisis at the startup. Since then, I’ve been actively upskilling in AI, exploring new opportunities in the field, freelancing, and building my own projects.",
   },
 ];
 
@@ -197,7 +197,7 @@ export const testimonials = [
     quote:
       "I had the chance to work closely with Antra during her time at Authenticate, where she played a key role as a full-stack developer. What stood out early on was her ability to communicate clearly, not just within the engineering team but across functions. Whether it was aligning with product on requirements or surfacing edge cases during planning, she had a calm, no-fluff approach that helped move things forward efficiently. Antra consistently followed through on what she committed to, even when dealing with shifting priorities. She was someone you could rely on without second-guessing. At the same time, she brought a real sense of curiosity—frequently prototyping alternate solutions, questioning assumptions in the right way, and exploring newer frameworks when they could add value. Culturally, she added a lot. She maintained strong working relationships across teams and struck that rare balance between being heads-down when needed and fully present in team conversations. Her impact went beyond code, and that made her a great fit at Authenticate.",
     name: "Anshaj Goel",
-    role: "Co-founder Authenticate®",
+    role: "Co-founder, Authenticate®",
   },
   {
     quote:

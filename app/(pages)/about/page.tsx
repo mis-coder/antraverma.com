@@ -9,7 +9,11 @@ export default function AboutPage() {
       <IntroSection />
       <CareerPathSection />
       <TestimonialsSection />
-      <BookCallSection />
+      <BookCallSection
+        text="Not convinced? 
+"
+        subText="Figure out yourself by booking a 15 min call with me"
+      />
     </div>
   );
 }

@@ -1,13 +1,24 @@
 "use client";
 
 import { careerData } from "@/app/constants";
+import { Button } from "../UI/Button";
 
 const CareerPathSection = () => {
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "assets/Antra-Verma--Resume.pdf";
+    link.target = "_blank";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="w-full px-4 bg-secondary md:bg-primary">
-      <div className="container-wrapper py-10 md:py-20">
+      <div className="container-wrapper text-primary md:bg-secondary py-10 md:py-20">
         <h2 className="section-title-sm">My Career Path So Far</h2>
-        <div className=" text-primary md:bg-secondary flex flex-col gap-10 py-12">
+        <div className=" flex flex-col gap-10 py-12">
           {careerData.map((item, index) => (
             <div
               key={index}
@@ -23,6 +34,13 @@ const CareerPathSection = () => {
             </div>
           ))}
         </div>
+        <Button
+          variant="primary"
+          className="block mt-4 mx-auto"
+          onClick={downloadResume}
+        >
+          Download CV
+        </Button>
       </div>
     </section>
   );
