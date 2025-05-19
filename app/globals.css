@@ -2,25 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
---primary-black: #030303;
---primary-white: #fdfdfd;
---header-height: 5rem;
+:root {
+  /* fonts */
+  --font-playway: "Playfair_Display";
+  --font-quick-sand: "Quicksand";
+
+  /* colors */
+  --color-primary: #ffffff;
+  --color-secondary: #07030e;
+  --color-tertiary: #7bb303;
+
+  --header-height: 4rem;
+
+  /* transitions */
+  --transition: opacity 0.4s ease-in-out;
 }
 
-@layer base{
-  @font-face {
-    font-family: 'Barlow Semi Condensed';
-    src: url('./assets/fonts/BarlowSemiCondensed-Black.ttf');
-  }
+* {
+  transition: var(--transition);
 }
 
-@layer components{
-  .list-item--link{
-    @apply hover:underline underline-offset-8
+
+@layer components {
+  .container-wrapper {
+    @apply w-full max-w-screen-xl mx-auto px-6 md:px-20;
   }
 
-  .link-btn{
-      @apply bg-primary-black text-primary-white flex md:inline-flex items-center justify-center rounded-3xl py-2 px-6 text-sm mt-6 gap-2 font-bold hover:bg-transparent hover:text-primary-black border-primary-white border-2 hover:border-solid hover:border-primary-black hover:transition-all duration-500 dark:bg-primary-white dark:text-primary-black dark:hover:bg-transparent dark:hover:text-primary-white dark:hover:border-primary-white;
+  .section-title {
+    @apply text-center text-4xl md:text-5xl font-playfair text-tertiary font-bold underline underline-offset-8 decoration-4 decoration-tertiary mb-10;
+  }
+
+  .section-title-sm{
+    @apply section-title md:text-left mb-8 text-3xl decoration-2;
+  }
+
+  .custom-link{
+    @apply flex items-center gap-2 hover:underline text-tertiary font-semibold text-sm
   }
 }

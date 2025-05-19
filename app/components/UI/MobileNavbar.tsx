@@ -1,9 +1,11 @@
 "use client";
 
-import { navItems } from "@/app/constants/static-data";
+import { navItems, onlineMeetUrl } from "@/app/constants";
 import { nanoid } from "nanoid";
+import Link from "next/link";
 import { useState } from "react";
 import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
+import { Button } from "./Button";
 
 const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,27 +19,20 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className="block md:hidden lg:hidden">
-      <FaBarsStaggered
-        size="20px"
-        className="animate-grow cursor-pointer"
-        onClick={onOpen}
-      />
+    <div className="block md:hidden">
+      <FaBarsStaggered size="20px" onClick={onOpen} />
 
       {isOpen && (
-        <div className="fixed z-2 top-0 left-0 bg-primary-black h-full w-full flex items-center justify-center">
+        <div className="fixed z-50 top-0 left-0 bg-secondary h-full w-full flex flex-col gap-10 items-center justify-center">
           <FaXmark
             size="30px"
-            className="animate-wiggle cursor-pointer absolute top-10 right-10"
+            className="cursor-pointer absolute top-10 right-10"
             onClick={onClose}
           />
           <nav>
             <ul>
               {navItems.map((item, index) => (
-                <li
-                  className={`animate-underline-${index} text-primary-white py-5`}
-                  key={nanoid()}
-                >
+                <li className={"text-primary-white py-5"} key={nanoid()}>
                   <a className="text-lg" href={item.url} target={item.target}>
                     {item.title}
                   </a>
@@ -45,6 +40,11 @@ const MobileNavbar = () => {
               ))}
             </ul>
           </nav>
+          <Button variant="primary">
+            <Link href={onlineMeetUrl} target="_blank">
+              Let&apos;s Talk
+            </Link>
+          </Button>
         </div>
       )}
     </div>
