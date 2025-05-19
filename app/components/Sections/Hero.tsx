@@ -54,7 +54,7 @@ const HeroSection = () => {
         </div>
 
         <div className="relative w-64 h-64 md:w-96 md:h-96">
-          <div className="absolute bottom-0 right-0 w-full h-full bg-tertiary rounded-full transform translate-x-4 translate-y-4"></div>
+          <div className="absolute bottom-0 right-0 w-full h-full bg-tertiary rounded-full transform translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4"></div>
           <div className="absolute top-0 left-0 w-full h-full bg-gray-100 rounded-full overflow-hidden border-4 border-secondary bg-secondary">
             <Image
               src={ProfileImg}

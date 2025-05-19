@@ -24,11 +24,11 @@ const CareerPathSection = () => {
               key={index}
               className="flex flex-col md:flex-row md:items-start gap-6 md:gap-20"
             >
-              <div className="text-lg text-left md:text-right md:w-1/3 text-tertiary font-semibold">
+              <div className="text-xl text-left md:text-right md:w-1/3 text-tertiary font-semibold">
                 <p>{item.title}</p>
                 <p className="font-normal">({item.duration})</p>
               </div>
-              <div className="md:w-2/3 w-full md:max-w-xl text-gray-300 text-md leading-relaxed">
+              <div className="md:w-2/3 w-full md:max-w-xl text-gray-300 text-lg leading-relaxed">
                 {item.description}
               </div>
             </div>

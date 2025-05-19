@@ -13,10 +13,8 @@ const FeaturedArticles = () => {
               key={article.id}
               className="border border-gray-200 rounded-lg p-6 shadow-sm bg-card"
             >
-              <h3 className="text-md md:text-lg mb-2 font-semibold">
-                {article.title}
-              </h3>
-              <p className="mb-4 text-sm md:text-md">{article.excerpt}</p>
+              <h3 className="text-lg mb-2 font-semibold">{article.title}</h3>
+              <p className="mb-4 text-md text-pretty">{article.excerpt}</p>
               <Link
                 href={article.url}
                 target="_blank"

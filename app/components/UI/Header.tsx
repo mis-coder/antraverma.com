@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-6">
           <a
             href="/"
-            className="font-playfair font-normal text-md md:text-xl tracking-wider"
+            className="font-playfair font-normal text-lg md:text-xl tracking-wider"
           >
             Antra Verma
           </a>
