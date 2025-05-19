@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="container-wrapper flex items-center justify-center md:justify-normal flex-wrap-reverse gap-8 md:gap-2 sm:flex-wrap ">
         <div className="flex-1 space-y-6">
           <h1 className="font-playfair text-4xl text-center md:text-left md:text-5xl lg:text-6xl font-bold">
-            Hey it's <span className="text-tertiary">Antra</span>!
+            Hey it&apos;s <span className="text-tertiary">Antra</span>!
           </h1>
 
           <p className="text-gray-300 w-full md:max-w-xl text-center md:text-left text-pretty">
