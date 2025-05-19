@@ -22,10 +22,10 @@ const FeaturedProjects = () => {
                 />
               </div>
               <div className="flex-grow">
-                <h3 className="font-semibold text-md md:text-lg mt-2">
+                <h3 className="font-semibold text-lg mt-2">
                   {project.title}
                 </h3>
-                <p className="my-2 text-sm md:text-md">{project.description}</p>
+                <p className="my-2 text-md">{project.description}</p>
               </div>
               <div className="flex items-center justify-between font-semibold text-sm text-tertiary mt-2">
                 <Link

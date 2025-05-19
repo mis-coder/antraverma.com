@@ -20,7 +20,7 @@ const MobileNavbar = () => {
 
   return (
     <div className="block md:hidden">
-      <FaBarsStaggered size="20px" onClick={onOpen} />
+      <FaBarsStaggered size="30px" onClick={onOpen} />
 
       {isOpen && (
         <div className="fixed z-50 top-0 left-0 bg-secondary h-full w-full flex flex-col gap-10 items-center justify-center">
@@ -32,7 +32,10 @@ const MobileNavbar = () => {
           <nav>
             <ul>
               {navItems.map((item, index) => (
-                <li className={"text-primary-white py-5"} key={nanoid()}>
+                <li
+                  className={"text-primary-white text-lg py-5 text-center"}
+                  key={nanoid()}
+                >
                   <a className="text-lg" href={item.url} target={item.target}>
                     {item.title}
                   </a>
