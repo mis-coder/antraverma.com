@@ -17,6 +17,7 @@ import AIUtilsPreview from "../assets/images/project_ai_utils.png";
 import PassGeneratorPreview from "../assets/images/project_pass_generator.png";
 
 export const onlineMeetUrl = "https://calendly.com/contact-antraverma/30min";
+export const topmateUrl = "https://topmate.io/antra_v";
 
 export const navItems = [
   {
