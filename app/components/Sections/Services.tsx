@@ -1,5 +1,6 @@
-import { services } from "@/app/constants";
+import { services, topmateUrl } from "@/app/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 const ServicesSection = () => {
   return (
@@ -30,6 +31,15 @@ const ServicesSection = () => {
               <p className="mb-3 text-base leading-relaxed text-pretty">
                 {service.description}
               </p>
+              {service.title.toLowerCase() === "consultation" && (
+                <Link
+                  href={topmateUrl}
+                  target="_blank"
+                  className="inline-block bg-secondary text-primary px-6 py-2 rounded-md mt-2 group-hover:bg-primary group-hover:text-secondary hover:scale-105 transition-all duration-300 ease-in-out"
+                >
+                  Book session
+                </Link>
+              )}
             </div>
           ))}
         </div>
