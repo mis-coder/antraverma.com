@@ -1,4 +1,4 @@
-import { services, topmateUrl } from "@/app/constants";
+import { mentorshipUrl, services } from "@/app/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,7 +33,7 @@ const ServicesSection = () => {
               </p>
               {service.title.toLowerCase() === "consultation" && (
                 <Link
-                  href={topmateUrl}
+                  href={mentorshipUrl}
                   target="_blank"
                   className="inline-block bg-secondary text-primary px-6 py-2 rounded-md mt-2 group-hover:bg-primary group-hover:text-secondary hover:scale-105 transition-all duration-300 ease-in-out"
                 >
