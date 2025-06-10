@@ -16,8 +16,8 @@ import Website from "../assets/icons/website.svg";
 import AIUtilsPreview from "../assets/images/project_ai_utils.png";
 import PassGeneratorPreview from "../assets/images/project_pass_generator.png";
 
-export const onlineMeetUrl = "https://calendly.com/contact-antraverma/30min";
-export const topmateUrl = "https://topmate.io/antra_v";
+export const onlineMeetUrl = "https://topmate.io/antra_v/1587164";
+export const mentorshipUrl = "https://www.codementor.io/@antraverma99";
 
 export const navItems = [
   {
@@ -185,7 +185,7 @@ export const careerData = [
     title: "Current status",
     duration: "2025",
     description:
-      "I parted ways with Authenticate on April 30, 2025, due to financial crisis at the startup. Since then, I’ve been actively upskilling in AI, exploring new opportunities in the field, freelancing, and building my own projects.",
+      "I parted ways with Authenticate on April 30, 2025. Now I am working independently as a freelance developer and writer. I am also open to new opportunities in the field of web development, AI, and technical writing.",
   },
 ];
 
