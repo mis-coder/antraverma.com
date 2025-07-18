@@ -1,8 +1,7 @@
 "use client";
-import * as React from "react";
-import { useTheme } from "next-themes";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
 import type { ThemeProviderProps } from "next-themes";
+import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
+import * as React from "react";
 import { FaCircleHalfStroke } from "react-icons/fa6";
 
 const storageKey = "theme-preference";
@@ -87,7 +86,7 @@ export const ThemeSwitch: React.FC = () => {
       className="flex items-center justify-center transition-opacity duration-300 hover:opacity-90 cursor-pointer"
     >
       <FaCircleHalfStroke
-        className={`h-[14px] w-[14px] ${
+        className={`h-5 w-5 ${
           currentTheme === "dark" ? "text-[#D4D4D4]" : "text-[#1c1c1c]"
         }`}
       />
