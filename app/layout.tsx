@@ -1,11 +1,11 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import Footer from "./components/footer";
+import { Navbar } from "./components/nav";
 import { ThemeProvider } from "./components/theme-switch";
+import "./globals.css";
 import { metaData } from "./lib/config";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -52,12 +52,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.className}`}>
-     
-      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-12">
+    <html lang="en" className="dark" style={{colorScheme:"dark"}}>
+      <body className={`${inter.className} antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-12`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
@@ -70,6 +69,6 @@ export default function RootLayout({
           </main>
         </ThemeProvider>
       </body>
-    </html>
+      </html>
   );
 }
