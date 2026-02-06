@@ -3,7 +3,7 @@ import { socialLinks } from "./lib/config";
 
 export default function Page() {
   return (
-    <section>
+    <section className="mb-18">
       <a href={socialLinks.twitter} target="_blank">
         <Image
           src="/profile.png"
@@ -18,24 +18,13 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-medium">Hey it's Antra👋</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          I am a Software Engineer with a strong passion for solving problems
-          and building things.
+        I help businesses streamline their operations and scale faster using AI Automation @   <a href="https://acceliyo.com/" target="_blank">
+            Acceliyo
+          </a>.
         </p>
 
-        <p>
-          I work as a Full Stack Developer at Particle Ex and run{" "}
-          <a href="https://acceliyo.com/" target="_blank">
-            Acceliyo
-          </a>
-          .&nbsp;An agency that helps businesses automate their workflows and
-          improve their efficiency.
-        </p>
-        <p>Core skills: Web Development, AI, Automation, Writing.</p>
-        <p>
-          Tools: TypeScript, Next.js, Node.js, ChatGPT, n8n, Make.com, Notion,
-          Google Sheets.
-        </p>
-        <p>Always open to interesting conversations—connect with me anytime.</p>
+        <p>I love creating an impact through my work and making a real difference in people&apos;s lives. </p> 
+        <p>In my free time, I enjoy sketching, writing, and traveling. Human behavior fascinates me, and I&apos;m always up for a good conversation.</p>
       </div>
     </section>
   );
